@@ -1,1 +1,1 @@
-# Kingsley-personal-site. GitHub. io
+# Kingsley-personal-site
