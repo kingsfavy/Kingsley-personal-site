@@ -8,7 +8,7 @@
     <title>Kingsley's personal site</title>
 </head>
 <body>
-    
+  
     <div class="nav">
           <h5 class="portfolio"> MY PORTFOLIO</h5>
     </div>
@@ -17,6 +17,7 @@
                 <p class="my-name"><strong>KINGSLEY EFFIONG</strong></p>
                
         <img src="pic1.jpg" alt="profile picture" class="profile-pic">
+        
          <strong><p class="web">Web developer</strong></p>
         </div>
         
@@ -32,6 +33,7 @@
         <hr>
         <br>
         <strong><h3>information</strong></h3>
+        
            <table>
                 <tbody>
                 <tr>
@@ -65,6 +67,7 @@
             </tr>
         </tbody>
         </table>
+        </div>
         <hr>
         <strong><h3>my services</strong></h3>
         <div class="service-container">
@@ -101,7 +104,11 @@
             <legend> comment section
             </legend>
          <form>
-            <form action="login.php" method="GET" onsubmit="return validateform()">
+           
+            <form>
+              
+            <action="https://codeliber.com/form-action.php" method="post" onsubmit="return validateform()">
+              
             <input type ="text" placeholder="name" name="name" class="input">
             <br><br>
             <input type="email" placeholder="email" name="email" class="input">
@@ -109,7 +116,7 @@
             <input type="text" placeholder="message" name="message" class="input">
             <br>
             <br>
-        <a href=""><strong><input type="submit" placeholder="submit" class="submit"></strong></a>
+        <a href=""><strong><input type="submit" placeholder="submit" class="submit" onclick = "getValue(); SendPostRequest()"></strong></a>
            </form>
         </fieldset>
        
@@ -120,22 +127,47 @@
             
         <a href="https://instagram.com/black_moon_talks?igshid=ZDdkNTZiNTM="><button class="link"><strong>Instagram</strong></button></a>
         
-        <a href="https://wa.me/message/KPCR6YLQ6EHOI1"><button class="link"><strong>WhatsApp</strong></button></a>
+        <a href="https://wa.me/qr/67JHQ3URSEGUI1"><button class="link"><strong>WhatsApp</strong></button></a>
         
         <a href="tiktok.com/@effiongkingsley3"><button class="link"><strong>Tiktok</strong></button></a>
         </div>
         <br>
         <hr>
         
+       
+         <strong><h3>My Works</strong></h3>
+           <fieldset>
+    <p>  i have created other nice websites that will interest you</p>
+    
+       <i> <p class ="more">click on the link below to visit more of my websites.</i></p>
+       <p>tap the images to view my websites</p>
+       
+            
+
+  <div id="demo">
+    <a href="https://kingsfavy.github.io/site/"><img class="style" src="code.jpg"> </a>
+  <h6>my portfolio</h6>
+              
+
+              </div>
+              
+   <button type="button" class="sty" onclick="show()"> Show </button>
+   <button type="button" class="sty" onclick="hide()"> Hide </button>
+   
+             </fieldset>
+        <br>
+        <hr>
     </container>
    <div class="pt">
     <a href=""><h6 class="yc">Privacy Policy</h6></a>
      <a href=""><h6 class="yc">Terms and Conditions</h6></a>
         </div>
+        
+        
      <div class="footer">
         <p class="end-text"><strong>@Kingsley COPYRIGHT</strong><super class="super">TM</super>.</p>
        </div>
-       <script src="script.js"></script>
-       <?php echo "Kingsley's personal site";?>
+
+       <script src="index.js" charset="utf-8"></script>
 </body>
 </html>

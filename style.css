@@ -5,8 +5,35 @@ body{
   width:100%;
  margin:0;
  text-align: center;
-
+ 
 }
+/*.bos{
+width:100%;
+position: absolute;
+}
+
+.bos{
+-webkit-animation: slide 5s linear 0s infinite;
+ animation: slide 5s linear 0s infinite;
+}
+ 
+@-wekit-keyframes slide{
+from {
+ left:0
+}
+to {
+ left: 600px 
+}
+}
+@keyframes slide {
+from {
+ left: 0;
+}
+to {
+ left: 600px;   
+}
+)
+*/
 .box{
      background-image:linear-gradient( rgb(88, 76, 76), rgb(97, 93, 93)); 
   width:100%;
@@ -41,3 +68,5 @@ hr{
   font:size:20px;
   color:white;
 }
+
+        

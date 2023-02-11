@@ -15,6 +15,10 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     background-color: rgb(250, 221, 186);
 }
+button{
+  box-shadow:0px 0px 3px 2px;
+  color:white;
+}
 .box{
     background-image:linear-gradient( rgb(88, 76, 76), rgb(97, 93, 93)); 
     width:100%; 
@@ -73,6 +77,7 @@ h2{
 h3{
     text-align: left;
     color:orange;
+    margin-left:2%;
 }
 
 hr{
@@ -82,10 +87,11 @@ hr{
      text-align: center;
 }
 .icon{
-  width:35px;
-  height:35px;
+  width:25px;
+  height:25px;
+  box-shadow:0px 0px 5px 2px;
+  color:white;
   
-  box-shadow:0px 0px 0px 0px;
 }
 img{
     width:305px;
@@ -106,6 +112,10 @@ input:hover{
     color:white;
     /*padding-left:5%;*/
 }
+.invincible {
+ margin:50px;
+  
+}
 legend{
     font-weight:bolder;
     font-size: large;
@@ -123,6 +133,13 @@ link:hover{
     border-radius: 45px;
     background-image:linear-gradient(rgba(231, 219, 219, 0.911), rgba(5, 1, 1, 0.801));
 }
+.mores{
+  display:flex;
+  flex-wrap:wrap;
+}
+.more{
+  font-weight:bolder;
+}
 .my-name{
     left:50%;
     top:85%;
@@ -133,6 +150,10 @@ link:hover{
     font-size: 55px;
     color:white;
     position: absolute;
+
+}
+.my-works{
+  float:left;
 
 }
 .nav{
@@ -162,13 +183,15 @@ link:hover{
     border:none;
     border-radius:35px;
 }
+
 .nav-text:hover{
+transition-duration: .5s;
     font-size:15px;
     border-radius:35px;
     opacity:1;
     background-color:rgb(228, 205, 205);
     color:black;
-}
+} 
 p{
     font-size: 12px;
     color: aquamarine white;
@@ -209,6 +232,7 @@ p{
     border:15px;
 }
 .side-nav{
+  margin-left:2%;
     width:auto;
     height:auto;
     position: fixed;
@@ -225,6 +249,29 @@ p{
 .side-pic:hover{
     width:0px;
     height:0px;
+}
+.scroll-container{
+  width:100%
+  height:auto;
+  text-align:center;
+}
+.scroll-text{
+  transform:translateY(50);
+  animation-duration:2s;
+ /* background-repeat-x:infinte;*/
+}
+.sty{
+  border:radius:45px;
+  color:white;
+  margin-top:3%;
+  box-shadow: 0px 0px 0px 0px;
+  
+}
+.style{
+  border-radius:10px;
+  flex:1;
+  width:100px;
+  height:100px;
 }
 .submit{
   text-align:center;
@@ -243,63 +290,40 @@ height:25%;
 gap:2rem;
 border:3px solid rgb(250, 221, 186);
 }
-/*.web{
-    font-weight: bolder;
-    font-size:60px;
-}
-
-@keyframes myAnimation {
-   from {
-      background-color: gold;
-      left: 0px;
-   }
-   to {
-      background-color: green;
-      left: 200px;
-   }
-}
-div {
+.contain{
    animation-name: myAnimation;
    animation-duration: 2s;
    animation-iteration-count: infinite;
    animation-direction: reverse;
    position: relative;
    width: 100%;
-   height: 100vh;
+   height: auto;
 }
-  @keyframes myAnimation {
-         from {
-            background-color: gold;
-            left: 0px;
-         }
-         to {
-            background-color: green;
-            left: 200px;
-         }
-      }
-      div {
-         animation-name: myAnimation;
-         animation-duration: 2s;
-         animation-iteration-count: infinite;
-         animation-direction: reverse;
-         position: relative;
-         width: 100%;
-         height: 100vh;
-      }*/
-      
-      .with-transition {
-         width: 0px;
-         height: 0px;
-         background: black;
-         transition-property: width;
-         transition-duration: 10s;
-         transition-delay: .5s;
-      }
-     .with-transition:hover {
-         width:100%;
-         height:100vh;
-      }
       .yc{
         flex:1;
         text-align:center;
+      }
+      
+         .dd {
+         position: absolute;
+         display: inline-block;
+         width:100%;
+      }
+      .dd-content {
+         position: absolute;
+         width: 100%;
+         box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+         height: 0px;
+         transition: height 1s;
+         overflow: hidden;
+      }
+      .dd:hover > .dd-content {
+        width:100%;
+         height:auto;
+      }
+      .dd-content > a {
+         display: block;
+         padding: 15px;
+         text-decoration: none;
+         color: black;
       }
