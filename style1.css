@@ -58,6 +58,11 @@ button{
     text-align: center; 
     font-size: 11px;
 }
+.flex{
+  width:auto;
+  height:auto;
+  
+}
 fieldset{
     border-style: dotted;
 }
@@ -100,7 +105,7 @@ img{
      overflow:none;   
 }
 .input{
-    width:100%;
+    width:97%;
      border-style:none none solid none;
      height:40px;
      background-color:rgb(250, 221, 186);
@@ -149,7 +154,7 @@ link:hover{
     font-weight: bolder;
     font-size: 55px;
     color:white;
-    position: absolute;
+    position:absolute;
 
 }
 .my-works{
@@ -200,7 +205,7 @@ p{
     font-size: 15px;
 }
 .profile-pic{
-    width:305px;
+   max-width:100%;
     height:100hv;
 }
 .pt{
@@ -327,3 +332,4 @@ border:3px solid rgb(250, 221, 186);
          text-decoration: none;
          color: black;
       }
+      
