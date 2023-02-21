@@ -149,10 +149,10 @@ link:hover{
     left:50%;
     top:75%;
     transform:translate(-50%, -75%);
-    width:320px;
+    width:325px;
   
     font-weight: bolder;
-    font-size: 43px;
+    font-size: 40px;
     color:white;
     position:absolute;
 
@@ -205,9 +205,9 @@ p{
     font-size: 15px;
 }
 .profile-pic{
-  max-width:100;
+  width:auto;
    
-    height:100hv;
+    height:100vh;
 }
 .pt{
   /*display:flex;*/
