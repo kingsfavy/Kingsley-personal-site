@@ -80,6 +80,7 @@ h2{
      font-size: 15px; 
 }
 h3{
+  -webkit-animation: bottom 2s normal  0s 1 both;
     text-align: left;
     color:orange;
     margin-left:2%;
@@ -99,12 +100,15 @@ hr{
   
 }
 img{
+  filter:saturate(140%);
+  -webkit-animation: bottom 1.5s normal  0s 1 both;
     width:305px;
     height:100vh;
      box-shadow: 0px 3px  3px 0px;
      overflow:none;   
 }
 .input{
+  -webkit-animation: bottom 2.5s normal  0s 1 both;
     width:97%;
      border-style:none none solid none;
      height:40px;
@@ -131,6 +135,7 @@ link:hover{
     
 }
 .link{
+  -webkit-animation: bottom 3s normal  0s 1 both;
   opacity:0.7;
     border:none;
     width:auto;
@@ -150,7 +155,7 @@ link:hover{
     top:75%;
     transform:translate(-50%, -75%);
     width:325px;
-  
+  z-index: 1;
     font-weight: bolder;
     font-size: 40px;
     color:white;
@@ -162,6 +167,7 @@ link:hover{
 
 }
 .nav{
+  -webkit-animation: bottom 1s normal  0s 1 both;
      overflow: none;
      text-align: center;
      width:100%;
@@ -333,8 +339,13 @@ border:3px solid rgb(250, 221, 186);
          text-decoration: none;
          color: black;
       }
-      @media only screen and (max-width:480px){body{
-        background color:pink;
-      };
+      @media only screen and (max-width:480px);
       @media only screen and (min-width:1200px);
       
+     @-webkit-keyframes bottom{
+  from{
+  -ms-webkit-transform:translate(0px, 1000px);
+  -webkit-transform:translate(0px, 1000px);
+  transform:translate(0px, 1000px);
+}
+}
